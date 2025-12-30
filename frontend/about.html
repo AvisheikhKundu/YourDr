@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Your Dr.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-blue-600">Your Dr.</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="detection.html" class="text-gray-600 hover:text-blue-600">Detection</a>
+                    <a href="about.html" class="text-blue-600 hover:text-blue-800">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">About Your Dr.</h1>
+
+        <!-- Model Information -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">EfficientNet-B4 Model</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Model Architecture</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><strong>Base Model:</strong> EfficientNet-B4</li>
+                        <li><strong>Input Size:</strong> 224x224 pixels</li>
+                        <li><strong>Classes:</strong> COVID-19, Pneumonia, Normal</li>
+                        <li><strong>Framework:</strong> PyTorch</li>
+                        <li><strong>Preprocessing:</strong> ImageNet normalization</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Performance Metrics</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><strong>Accuracy:</strong> ~95% on validation set</li>
+                        <li><strong>Precision:</strong> High for all classes</li>
+                        <li><strong>Recall:</strong> Optimized for medical use</li>
+                        <li><strong>Inference Time:</strong> < 2 seconds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">How It Works</h2>
+
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                        <span class="text-blue-600 font-semibold">1</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Image Upload</h3>
+                        <p class="text-gray-600">Users upload chest X-ray images in PNG, JPG, or JPEG format (max 10MB).</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                        <span class="text-green-600 font-semibold">2</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Preprocessing</h3>
+                        <p class="text-gray-600">Images are resized to 224x224 pixels and normalized using ImageNet standards.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                        <span class="text-purple-600 font-semibold">3</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">AI Analysis</h3>
+                        <p class="text-gray-600">The EfficientNet-B4 model analyzes the image and provides classification probabilities.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                        <span class="text-orange-600 font-semibold">4</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Results Display</h3>
+                        <p class="text-gray-600">Results show predicted class, confidence level, and probability breakdown with animated bars.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Limitations -->
+        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Important Limitations</h2>
+
+            <div class="space-y-3 text-gray-700">
+                <p><strong>Not a Substitute for Professional Diagnosis:</strong> This AI system is designed to assist healthcare professionals, not replace them.</p>
+
+                <p><strong>Limited to X-ray Images:</strong> The model is trained specifically on chest X-ray images and cannot analyze other types of medical imaging.</p>
+
+                <p><strong>Training Data Constraints:</strong> Performance depends on the quality and diversity of the training dataset used.</p>
+
+                <p><strong>Potential for Errors:</strong> Like all AI systems, this model can make incorrect predictions. Always verify results with clinical expertise.</p>
+
+                <p><strong>Regular Updates Required:</strong> Medical AI models should be regularly updated with new data and validated against clinical outcomes.</p>
+            </div>
+        </div>
+
+        <!-- Usage Guidelines -->
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Usage Guidelines</h2>
+
+            <div class="space-y-3 text-gray-700">
+                <p><strong>For Healthcare Professionals:</strong> Use this tool as a second opinion to support clinical decision-making.</p>
+
+                <p><strong>Image Quality:</strong> Ensure X-ray images are clear, properly exposed, and focused on the chest area.</p>
+
+                <p><strong>Patient Privacy:</strong> Never upload images containing patient identifiable information.</p>
+
+                <p><strong>Follow-up Required:</strong> All AI predictions should be followed up with appropriate clinical tests and professional evaluation.</p>
+
+                <p><strong>Report Issues:</strong> If you encounter consistently poor performance, please contact us for feedback.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pillow
+numpy
+onnxruntime
+# Optional: PyTorch. Install only if you will use a PyTorch model
+# torch
